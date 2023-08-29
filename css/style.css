@@ -1,0 +1,318 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.fixed-spotify {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.fixed-spotify a:hover {
+    border: none;
+}
+
+.fixed-spotify .img-spotify {
+    width: 40px;
+}
+
+.row {
+    max-width: 180px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 5px;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+.row strong {
+    color: #24D561;
+    transition: 0.5s;
+    padding: 5px;
+    display: block;
+}
+
+.row:hover {
+    border-color: #1eb653;
+    background-color: #000000;
+}
+
+.row strong:hover {
+    color: #1eb653;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #E50000;
+    text-decoration: none;
+}
+
+/* Navbar */
+
+#navbar {
+    padding: 1.5rem 1.5rem;
+    border-bottom: 2px solid #ddd;
+    background-color: #dddddd5e;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+#navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#logo-page {
+    height: 23pt;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 5px;
+}
+
+/* Conteúdo Principal */
+
+.container {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+#posts-container {
+    flex: 3 1 0;
+}
+
+.post {
+    margin-bottom: 2.5rem;
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.title, 
+.description,
+.author {
+    margin-bottom: 1rem;   
+}
+
+.description strong {
+    color: #b66767;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.author {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Barra Lateral */
+
+#sidebar {
+    flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#contador,
+#tags {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+#search-bar h4,
+#categories h4,
+#contador h4,
+#tags h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+#contador  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contador h4 {
+    margin-bottom: 0px;
+    margin-right: 5px;
+    color: #4e4e4e;
+}
+
+#contador h2 {
+    display: block;
+}
+   
+#contador h2{
+    margin-top: 4px;
+    color: #960000;
+}
+
+#search-bar form{
+    display: flex;
+}
+
+#search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #960000;
+    outline-color: #960000;
+    background-color: transparent;
+    color: #4e4e4e;
+}
+
+#search-bar input[type="text"] {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#search-bar input[type="text"]:focus {
+    outline-style: none;
+}
+
+#search-bar input[type="submit"]:focus {
+    outline-offset: 2px;
+    outline-color: #444 ;
+    outline-style: solid;
+}
+ 
+#search-bar input[type="submit"] {
+    cursor: pointer;
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #960000;
+    color: #fff;
+}
+
+#categories li {
+    margin-bottom: 1rem;
+}
+ 
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container a {
+    background-color: #ddd;
+    padding: .5rem  .7rem;
+    border-radius: .3rem;
+}
+
+#tags-container a:hover {
+    background-color: #d3d3d3;
+    box-shadow: 0px 0px 5px #d3d3d3;
+}
+
+/* Rodapé */
+
+#footer {
+    border-top: 2px solid #ddd;
+    padding: 3rem ;
+    text-align: center;
+}
+
+#footer img {
+    width: 100px;
+}
+
+#footer h2,
+#footer p {
+    margin-bottom: 1rem;
+}
+
+#navbar-inner {
+    margin-left: 0px;
+    margin-right: 1.5rem;
+}
+
+#navbar #img{
+    margin-right: 1.5rem !important;
+    margin-left: 0px !important;
+}
+
+@media (max-width: 1200px) {
+    a b {
+        display: none !important;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .row strong {
+        display: none;
+    }
+
+    a b {
+        display: none !important;
+    }
+
+    #img {
+        margin-left: 0px !important;
+    }
+
+    #navbar img{
+        margin-right: 1.5rem;
+    }
+
+    #search-bar {
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        min-width: 300px;
+    }
+
+    #search-bar input[type="text"] {
+        width: 75%;
+    }
+
+    #search-bar input[type="submit"] {
+        width: 25%;
+    }
+}
+
+/* Finalizando Seção de Projeto de Blog Semântico com HTML5 e CSS3 (23.08.2023) => {19:05}; */
