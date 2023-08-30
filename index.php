@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Jão</title>
-    <link rel="shortcut icon" href="./img/logo-page.png" type="image/png">
+    <link rel="shortcut icon" href="./img/icon-page2.png" type="image/png">
     <!-- Estilização -->
     <link id="style-link" rel="stylesheet" href="./css/style.css">
     <!-- Fontes -->
@@ -62,9 +62,27 @@
 </style>
 <body>
     <?php
-        $numero_visitas_atual = file_get_contents('./sec/arq.in');
-        $numero_visitas_atual = $numero_visitas_atual + 1;
-        file_put_contents('./sec/arq.in', $numero_visitas_atual);
+        $filename = './sec/arq.in';
+        $visitors_file = './sec/visitors.txt';
+        $ip = $_SERVER['REMOTE_ADDR'];
+        
+        if (!file_exists($filename)) {
+            file_put_contents($filename, '0');
+        }
+        
+        $numero_visitas_atual = (int) file_get_contents($filename);
+        $visitors = [];
+        
+        if (file_exists($visitors_file)) {
+            $visitors = unserialize(file_get_contents($visitors_file));
+        }
+        
+        if (!in_array($ip, $visitors)) {
+            $numero_visitas_atual++;
+            $visitors[] = $ip;
+            file_put_contents($visitors_file, serialize($visitors));
+            file_put_contents($filename, (string) $numero_visitas_atual);
+        }        
     ?>
     <header id="home">
         <nav id="navbar">
@@ -131,7 +149,7 @@
         <aside id="sidebar">
             <section id="contador">
                 <img src="./img/img-user.png" alt="" id="foto-user">
-                <h2><b>: </b> <?php echo file_get_contents('./sec/arq.in') ?></h2>
+                <h2><b>Visitantes: </b> <?php echo file_get_contents('./sec/arq.in') ?></h2>
             </section>
             <section id="search-bar">
                 <h4>Busca</h4>
@@ -144,7 +162,7 @@
                 <h4>Categorias</h4>
                 <nav>
                     <ul>
-                        <li><a href="https://pt.wikipedia.org/wiki/J%C3%A3o">Blibiografia</a></li>
+                        <li><a href="./bibliografia.html">Blibiografia</a></li>
                         <li><a href="https://www.sitedojao.com/">Eventos e Shows</a></li>
                         <li><a href="https://www.instagram.com/jao/">Redes Sociais</a></li>
                         <li><a href="https://www.letras.mus.br/jao/discografia/">Álbums</a></li>

@@ -69,7 +69,6 @@ a:hover {
 
 
 #navbar {
-    padding: 1.5rem 0px;
     border-bottom: 2px solid #3a3a3a;
     background-color: #24242448;
     color: #e0e0e0;
@@ -83,6 +82,7 @@ a:hover {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1.5rem 1.5rem;
 }
 
 #logo-page {
@@ -248,17 +248,6 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-#navbar-inner {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-#navbar #img{
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-}
-
-
 @media (max-width: 1200px) {
     a b {
         display: none !important;
@@ -307,6 +296,13 @@ a:hover {
     #search-bar input[type="submit"] {
         width: 25%;
     }
+}
+
+/* Bibliografia */
+
+.img-biblio img {
+    text-align: center;
+    width: 200px;
 }
 
 /* Finalizando Seção de Projeto de Blog Semântico com HTML5 e CSS3 (23.08.2023) => {19:05}; */
