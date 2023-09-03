@@ -62,35 +62,17 @@
 </style>
 <body>
     <?php
-        $filename = './sec/arq.in';
-        $visitors_file = './sec/visitors.txt';
-        $ip = $_SERVER['REMOTE_ADDR'];
-        
-        if (!file_exists($filename)) {
-            file_put_contents($filename, '0');
-        }
-        
-        $numero_visitas_atual = (int) file_get_contents($filename);
-        $visitors = [];
-        
-        if (file_exists($visitors_file)) {
-            $visitors = unserialize(file_get_contents($visitors_file));
-        }
-        
-        if (!in_array($ip, $visitors)) {
-            $numero_visitas_atual++;
-            $visitors[] = $ip;
-            file_put_contents($visitors_file, serialize($visitors));
-            file_put_contents($filename, (string) $numero_visitas_atual);
-        }        
+        $numero_visitas_atual = file_get_contents('./sec/arq.in');
+        $numero_visitas_atual = $numero_visitas_atual + 1;
+        file_put_contents('./sec/arq.in', $numero_visitas_atual); 
     ?>
     <header id="home">
         <nav id="navbar">
             <div id="navbar-inner">
                 <img src="./img/logo-page-2.png" alt="" id="logo-page">
                 <ul id="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="https://www.letras.mus.br/jao/discografia/">Álbuns</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="./criadores.html">Criadores</a></li>
                     <li><a href="https://www.sitedojao.com/" class="link-turne">Ingressos <b>Superturnê!</b></a></li>
                     <li>
                         <label class="switch">
@@ -162,23 +144,24 @@
                 <h4>Categorias</h4>
                 <nav>
                     <ul>
-                        <li><a href="./bibliografia.html">Blibiografia</a></li>
-                        <li><a href="https://www.sitedojao.com/">Eventos e Shows</a></li>
-                        <li><a href="https://www.instagram.com/jao/">Redes Sociais</a></li>
-                        <li><a href="https://www.letras.mus.br/jao/discografia/">Álbums</a></li>
+                    <li>
+                        <a href="./biografia.html">Blibiografia</a></li>
+                        <li><a href="./eventos.html">Eventos e Shows</a></li>
+                        <li><a href="./albuns.html">Álbums</a></li>
+                        <li><a href="./criadores.html">Criadores</a></li>
                     </ul>
                 </nav>
             </section>
             <section id="tags">
                 <h4>Hashtags</h4>
                 <div id="tags-container">
-                    <a href="#">#POP</a>
-                    <a href="#">#Jão</a>
-                    <a href="#">#Música</a>
-                    <a href="#">#São Paulo</a>
-                    <a href="#">#Artista</a>
-                    <a href="#">#Top 10 Brasil</a>
-                    <a href="#">#This is Jão</a>
+                    <a href="https://www.instagram.com/explore/tags/pop/?theme=dark">#POP</a>
+                    <a href="https://www.instagram.com/explore/tags/j%C3%A3o/?theme=dark">#Jão</a>
+                    <a href="https://www.instagram.com/explore/tags/m%C3%BAsica/?theme=dark">#Música</a>
+                    <a href="https://www.instagram.com/explore/tags/saopaulo/?theme=dark">#São Paulo</a>
+                    <a href="https://www.instagram.com/explore/tags/artista/?theme=dark">#Artista</a>
+                    <a href="https://www.instagram.com/explore/tags/top10brasil/?theme=dark">#Top 10 Brasil</a>
+                    <a href="https://www.instagram.com/explore/tags/thisisjao/?theme=dark">#This is Jão</a>
                 </div>
             </section>
         </aside>

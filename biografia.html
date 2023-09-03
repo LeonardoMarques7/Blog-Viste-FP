@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Jão</title>
+    <link rel="shortcut icon" href="./img/icon-page2.png" type="image/png">
+    <!-- Estilização -->
+    <link id="style-link" rel="stylesheet" href="./css/style.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<style>
+    input[type="checkbox"] {
+        appearance: none;
+    }
+
+    label, input[type="checkbox"]:hover {
+        cursor: pointer;
+    }
+
+    #nav-links .img-modo {
+        width: 18px;
+        margin-top: 2px;
+    }
+
+    body {
+        display: none;
+    }
+
+    a b {
+        font-weight: bold;
+        font-size: 12px;
+        border: 1px solid #e50000;
+        padding: 2px;
+        border-radius: 2px;
+        background-color: #e50000;
+        color: #fff;
+        transition: 0.4s;
+    }
+
+    .link-turne:hover b, .link-turne a:hover{
+        color: #fff;
+    }
+
+    a:hover b {
+        border: 1px solid #a70000;
+        background-color: #a70000;
+    }
+
+    #foto-user {
+        width: 24pt; 
+        margin-right: 5px;
+    }
+
+    h2 b {
+        font-weight: normal;
+        color: #000;
+    } 
+
+    .img-jao-biblio {
+        display: none;
+    }
+</style>
+<body>
+    <header id="home">
+        <nav id="navbar">
+            <div id="navbar-inner">
+                <img src="./img/logo-page-2.png" alt="" id="logo-page">
+                <ul id="nav-links">
+                    <li><a href="./index.php">Home</a></li>
+                    <li><a href="./criadores.html">Criadores</a></li>
+                    <li><a href="https://www.sitedojao.com/" class="link-turne">Ingressos <b>Superturnê!</b></a></li>
+                    <li>
+                        <label class="switch">
+                            <input type="checkbox" id="style-toggle">
+                            <img src="./img/modo-escuro.png" id="img" alt="Toggle Image" class="img-modo" data-dark-image="./img/modo-claro.png">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <button class="fixed-spotify">
+            <a href="https://open.spotify.com/intl-pt/artist/59FrDXDVJz0EKqYg39dnT2?si=Kmqw66yPRjOL6roBveQGeA">
+                <div class="row"><img src="./img/spotify-fixed.png" alt="" class="img-spotify"><strong>Ouça agora!</strong></div>
+            </a>
+        </button>
+    </header>
+    <div class="container">
+        <main id="posts-container">
+            <article class="post">
+                <p style="background-image: url('./img/f3.jpg'); background-position: center; background-size: cover; height: 150px; border-radius: 30px;border: 1px solid #ccc;  color: transparent;" class="img-jao-biblio">JÂO</p>
+                <div class="text-img" style="background-image: url('./img/f1.jpg');">
+                    <h3>Biografia</h3>
+                </div>
+                <h3 class="title"></h3>
+                <p class="description-biblio top">
+                    O João Vitor Romania Balbino (Américo Brasiliense, 3 de novembro de 1994), mais conhecido pelo seu nome artístico Jão, é um cantor e compositor brasileiro. Ele começou sua carreira musical em 2016, postando covers de canções no aplicativo de compartilhamento de vídeos YouTube. Ele chamou a atenção dos produtores Pedro Dash e Marcelinho Ferraz, o que o levou a assinar um contrato com a Head Media, selo da Universal Music Group. Ele lançou seu single de estreia, "Dança pra Mim" (com Pedrowl), em novembro de 2016. O EP de estreia de Jão intitulado Primeiro Acústico foi lançado em junho de 2018, seguido por seu primeiro álbum de estúdio, Lobos, em agosto do mesmo ano.
+                </p>
+                <p class="description-biblio">
+                    A descoberta de Jão veio quando seu single "Imaturo" recebeu um reconhecimento significativo; a canção recebeu certificação de diamante no Brasil. Seu segundo álbum de estúdio, Anti-Herói, foi lançado em outubro de 2019, e foi apoiado pelos singles "Enquanto Me Beija" e "Essa Eu Fiz pro Nosso Amor". O álbum estreou todas as suas 10 faixas no top 200 do Spotify Brasil. Seu terceiro álbum de estúdio, Pirata, foi lançado em outubro de 2021. O single "Idiota" foi a canção do álbum que mais se destacou, alcançando a segunda posição nas rádios pop do Brasil e o top 20 na parada de singles de Portugal. No Grammy Latino de 2022, Pirata foi indicado para Melhor Álbum Pop Contemporâneo em Língua Portuguesa, enquanto "Idiota" foi indicada para Melhor Canção em Língua Portuguesa. Ele lançou seu quarto álbum, Super, em agosto de 2023.
+                </p>
+                <p class="description-biblio bottom">Entre seus prêmios, Jão ganhou três MTV Miaw Brasil, um Troféu Imprensa e um Internet e recebeu duas indicações ao Grammy Latino e sete ao Prêmio Multishow de Música Brasileira.</p>
+            </article>
+            <article class="post">
+                <div class="text-img" style="background-image: url('./img/f2.jpg');">
+                    <h3>Origens</h3>
+                </div>
+                <p class="description-biblio top bottom">
+                    O apelido 'Jão' veio de sua irmã que o chamava por esse nome desde quando eram crianças. Jão foi criado em uma família que fala abertamente sobre sentimentos, o que o cantor considera como um dos fatores responsáveis pelo tom sentimental de suas composições. Durante sua infância, Jão possuía como referências artísticas a cantora Marisa Monte e o cantor Cazuza, que lhe influenciaram a mostrar seu talento em apresentações no teatro da escola e fazer aulas de instrumentos como violão, teclado e flauta. Em seguida, começou a compor e produzir sozinho em seu quarto no interior de São Paulo. Aos 17 anos, se mudou para cidade de São Paulo para fazer faculdade de Publicidade e Propaganda na Universidade de São Paulo (USP), mas desistiu para seguir carreira musical, chegando a cantar em bares e karaokês para conseguir dinheiro. O incentivo de iniciar uma carreira profissional na música, veio dos amigos Pedro Tófani e Renan Silva, que ajudaram o cantor a fazer vídeos para o YouTube. Em entrevista, o cantor disse que o bullying que sofria na escola foi o motivo decisivo para se tornar cantor.
+                </p>
+            </article>
+            <article class="post">
+                <div class="text-img" style="background-image: url('./img/f3.jpg');">
+                    <h3>Vida Pessoal</h3>
+                </div>
+                <p class="description-biblio top bottom">
+                    A sexualidade de Jão tem sido objeto de especulação desde o início de sua carreira. Em novembro de 2020, durante uma entrevista para a Revista Quem, o artista revelou que não se rotula: "Nunca senti uma necessidade de restringir o gênero da pessoa com qual eu fosse me relacionar ou escolher um nome para isso. [...] Minha sexualidade não está aberta a debate nesse sentido, de 'ser isso ou aquilo'". Em agosto de 2021, revelou ser bissexual.
+                </p>
+            </article>
+            <article class="post" style="border-radius: 10px; padding: 25px 25px;">
+                <p class="description-biblio">
+                    <ul class="ul-redes">
+                        <li class="li-redes insta"><a href="https://www.instagram.com/jao/"><figure><img src="./img/insta-logo.png" alt="Rede Social" class="img-logo insta"><figcaption>Instagram</figcaption></figure></a></li>
+                        <li class="li-redes tiktok"><a href="https://www.tiktok.com/@jao"><figure><img src="./img/tiktok-logo.png" alt="Rede Social" class="img-logo tiktok"><figcaption>TikTok</figcaption></figure></a></li>
+                        <li class="li-redes x"><a href="https://twitter.com/jaoromania"><figure><img src="./img/x-logo.png" alt="Rede Social" class="img-logo x"><figcaption>X</figcaption></figure></a></li>
+                        <li class="li-redes face"><a href="https://www.facebook.com/jaoromania"><figure><img src="./img/face-logo.png" alt="Rede Social" class="img-logo face"><figcaption>Facebook</figcaption></figure></a></li>
+                        <li class="li-redes spo"><a href="https://open.spotify.com/intl-pt/artist/59FrDXDVJz0EKqYg39dnT2?si=HyA7nJpdQISKE5Gcx2YaSg"><figure><img src="./img/spotify-logo.png" alt="Rede Social" class="img-logo"><figcaption>Spotify</figcaption></figure></a></li>
+                        <li class="li-redes you"><a href="https://www.youtube.com/@JAO"><figure><img src="./img/youtube-logo.png" alt="Rede Social" class="img-logo"><figcaption>YouTube</figcaption></figure></a></li>
+                    </ul>
+                </p>
+            </article>
+        </main>
+        <aside id="sidebar">
+            <section id="search-bar">
+                <h4>Busca</h4>
+                <form>
+                    <input type="text" placeholder="Pesquise no blog">
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+            <section id="categories">
+                <h4>Categorias</h4>
+                <nav>
+                    <ul>
+                        <li><a href="./biografia.html" class="active">Blibiografia</a></li>
+                        <li><a href="./eventos.html">Eventos e Shows</a></li>
+                        <li><a href="./albuns.html">Álbums</a></li>
+                        <li><a href="./criadores.html">Criadores</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="tags">
+                <h4>Hashtags</h4>
+                <div id="tags-container">
+                    <a href="https://www.instagram.com/explore/tags/pop/?theme=dark">#POP</a>
+                    <a href="https://www.instagram.com/explore/tags/j%C3%A3o/?theme=dark">#Jão</a>
+                    <a href="https://www.instagram.com/explore/tags/m%C3%BAsica/?theme=dark">#Música</a>
+                    <a href="https://www.instagram.com/explore/tags/saopaulo/?theme=dark">#São Paulo</a>
+                    <a href="https://www.instagram.com/explore/tags/artista/?theme=dark">#Artista</a>
+                    <a href="https://www.instagram.com/explore/tags/top10brasil/?theme=dark">#Top 10 Brasil</a>
+                    <a href="https://www.instagram.com/explore/tags/thisisjao/?theme=dark">#This is Jão</a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer id="footer">
+        <img src="./img/Jão_signature.png" alt="" id="signature">
+    </footer>
+    
+    <script src="./js/script.js"></script>
+    <!-- Finalizando Seção de Projeto de Blog Semântico com HTML5 e CSS3 (23.08.2023) => {19:05}; -->
+</body>
+</html>

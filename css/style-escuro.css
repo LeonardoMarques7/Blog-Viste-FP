@@ -127,6 +127,24 @@ a:hover {
     color: #b4b4b4;  
 }
 
+.description-biblio {
+    margin-bottom: 1rem;
+}
+
+.active {
+    color: #960000;
+    font-weight: bold;
+}
+
+.description-biblio {
+    color: #b4b4b4;
+    line-height: 25px;
+}
+
+.description-biblio strong {
+    color: #b66767;
+}
+
 .description strong {
     color: #b66767;
 }
@@ -265,6 +283,20 @@ a:hover {
         flex-wrap: wrap;
     }    
 
+    .ul-redes {
+        justify-content: center !important;
+        gap: 10px !important;
+        flex-wrap: wrap !important;
+        padding: 30px !important;
+        flex-direction: row;
+    }
+
+    .li-redes {
+        width: 30%;
+        border: none;
+        padding: 10px 20px !important;
+    }
+
     .row strong {
         display: none;
     }
@@ -275,7 +307,6 @@ a:hover {
 
     #navbar img{
         margin-left: 0px;
-        margin-right: 1.5rem;
     }
 
     #img {
@@ -296,13 +327,238 @@ a:hover {
     #search-bar input[type="submit"] {
         width: 25%;
     }
+
+    .text-img {
+        background: none !important;
+        text-align: center;
+        border-bottom: 1px solid #b4b4b4;
+        border-radius: 0px !important;
+    }
+
+    .img-jao-biblio {
+        display: block !important;
+    }
+
+
+    .text-img h3 {
+        width: 100%;
+        font-size: 50px !important;
+        color: #dfdfdf !important;
+        justify-content:center !important;
+    } 
+
+    .bottom {
+        border-bottom: 0px dashed transparent !important;
+        padding-bottom: 0px !important;
+    }
+    
+    .top {
+        border-top: 0px dashed transparent !important;
+        padding-top: 0px !important;
+    }
+
+    .poster img {
+        max-width: 400px;
+    }
+
 }
 
-/* Bibliografia */
+/* biografia */
+
+.bottom {
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+}
+
+.top {
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
 
 .img-biblio img {
     text-align: center;
-    width: 200px;
+}
+
+.text-img {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.text-img h3 {
+    color: #ddd;
+    margin-left: 10px; 
+    font-weight: bold; 
+    font-size: 60pt; 
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+    padding: 0px;
+}
+
+.ul-redes {
+    display: flex;
+    gap: 6px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3b3b3b;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.img-logo {
+    width: 50px !important;
+    border-radius: 10px !important;
+    background-color: transparent !important;
+    box-shadow: 0px 1px 10px rgba(0,0,0,.1);
+}
+
+.ul-redes .spo,
+.ul-redes .x,
+.ul-redes .tiktok,
+.ul-redes .insta,
+.ul-redes .face,
+.ul-redes .you{
+    border: 1px solid #474747;
+}
+
+.spo:hover {
+    border: 1px solid #1eb653;
+}
+
+.face:hover {
+    border: 1px solid #3b5998;
+}
+
+.x:hover, .tiktok:hover {
+    border: 1px solid #000000;
+}
+
+.you:hover {
+    border: 1px solid #960000;
+}
+
+
+.insta:hover{
+    border: 1px solid #b66767;
+}
+
+.li-redes {
+    border-radius: 10px;
+    width: 80px;
+    padding: 10px;
+    border: 2px solid #474747;
+    transition: 0.5s;
+}
+
+.li-redes:hover {
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.li-redes a:hover {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Links Redes Socias Personalizado */
+
+.spo a:hover {
+    color: #1eb653;
+}
+
+.face a:hover {
+    color: #3b5998;
+}
+
+.tiktok a:hover {
+    color: #cecece;
+}
+
+.x a:hover {
+    color: #cecece;
+    font-weight: bold;
+}
+
+.li-redes:hover {
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+/* Álbuns */
+
+.card {
+    border: 1px solid #3b3b3b;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card h3 {
+    border: 1px solid #3b3b3b;
+    border-radius: 5px;
+    color: #dfdfdf;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+.card .link-card {
+    color: #fff;
+    background-color: #960000;
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.card .link-card:hover {
+    color: #960000;
+    background-color: transparent;
+    border: 1px #960000 solid;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.img-card {
+    width: 300px !important;
+}
+
+.faixa-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Eventos e Shows */
+
+.poster img {
+    width: 600px;
+    border-radius: 5px;
+    outline: 1px solid #ccc;
+    outline-offset: 5px;
+    outline-style: double;
+}
+
+.poster {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Criadores */
+
+.title-page-criadores {
+    font-size: 30pt;
+    color: #c2c2c2;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 /* Finalizando Seção de Projeto de Blog Semântico com HTML5 e CSS3 (23.08.2023) => {19:05}; */
