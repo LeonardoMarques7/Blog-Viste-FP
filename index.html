@@ -61,11 +61,6 @@
     } 
 </style>
 <body>
-    <?php
-        $numero_visitas_atual = file_get_contents('./sec/arq.in');
-        $numero_visitas_atual = $numero_visitas_atual + 1;
-        file_put_contents('./sec/arq.in', $numero_visitas_atual); 
-    ?>
     <header id="home">
         <nav id="navbar">
             <div id="navbar-inner">
@@ -129,10 +124,6 @@
             </article>
         </main>
         <aside id="sidebar">
-            <section id="contador">
-                <img src="./img/img-user.png" alt="" id="foto-user">
-                <h2><b>Visitantes: </b> <?php echo file_get_contents('./sec/arq.in') ?></h2>
-            </section>
             <section id="search-bar">
                 <h4>Busca</h4>
                 <form>
