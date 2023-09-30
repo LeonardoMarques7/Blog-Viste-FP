@@ -72,7 +72,7 @@ a:hover {
 #navbar {
     border-bottom: 2px solid #ddd;
     background-color: #dddddd5e;
-    position: fixed; /* Set the navbar to fixed position */
+    position: absolute; /* Set the navbar to fixed position */
     top: 0px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
@@ -508,7 +508,6 @@ a:hover {
         flex-wrap: wrap;
         gap: 0.5rem;
     }
-
 }
 
 /* biografia */
