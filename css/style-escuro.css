@@ -167,17 +167,23 @@ a:hover {
 #search-bar,
 #categories,
 #contador,
-#tags {
+#tags, 
+#redes {
     padding: 1.5rem;
     border: 1px solid #707070;
     border-radius: 2px;
     margin-bottom: 1rem;
 }
 
+#redes {
+    border: none;
+}
+
 #search-bar h4,
 #categories h4,
 #contador h4,
-#tags h4 {
+#tags h4,
+#redes h4 {
     color: #c2c2c2;
     margin-bottom: 1.5rem;
     font-size: 1.6rem;
@@ -245,6 +251,32 @@ a:hover {
 
 #tags-container a:hover {
     background-color: #d3d3d3;
+    box-shadow: 0px 0px 5px #d3d3d3;
+}
+
+#tags-container-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+#tags-container-2 a {
+    padding: .5rem  .7rem;
+    border-radius: .3rem;
+}
+
+#tags-container-2 a {
+    text-align: center;
+    width: 20px;
+    display: flex;
+    transition: 0.5s;
+}
+
+#tags-container-2 a:hover {
+    background-color: transparent;
+    font-size: 20px;
+    color: #d8d8d8;
     box-shadow: 0px 0px 5px #d3d3d3;
 }
 
@@ -359,6 +391,20 @@ a:hover {
 
     .poster img {
         max-width: 400px;
+    }
+
+    #redes {
+        padding: 1.5rem;
+        border: 1px solid #707070;
+        border-radius: 2px;
+        margin-bottom: 1rem;
+    }
+
+    #tags-container-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
     }
 
 }
